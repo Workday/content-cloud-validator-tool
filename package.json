@@ -1,0 +1,28 @@
+{
+  "name": "content-cloud-validator-tool",
+  "version": "1.0.0",
+  "description": "Workday's Content Cloud Validation Tool",
+  "main": "index.js",
+  "scripts": {
+    "start": "mocha index.js",
+    "lint": "eslint .",
+    "posttest": "npm run lint && nsp check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:workday/content-cloud-validator-tool.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "hippie": "^0.5.2",
+    "jsonwebtoken": "^8.3.0",
+    "mocha": "^5.2.0",
+    "sanitize-html": "^1.18.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "nsp": "^3.2.1"
+  }
+}
